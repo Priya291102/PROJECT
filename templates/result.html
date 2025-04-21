@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>AQI Prediction Results</h2>
+
+<p><strong>Predicted AQI:</strong> {{ prediction }}</p>
+<p><strong>AQI Category:</strong> {{ category }}</p>
+<p><strong>Health Effects:</strong> {{ health_effect }}</p>
+
+<a href="{{ url_for('home') }}">
+    <input class="btn btn-info" type="submit" value="Make Another Prediction" ></a>
+{% endblock %}
